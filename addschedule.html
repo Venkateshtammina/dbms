@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+
+.container {
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 40px;
+    width: 400px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"] {
+    padding: 10px;
+    border: 2px solid #ced4da;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 0;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+    }
+}
+
+</style>
+</head>
+<body>
+    <title>ADD SCHEDULE</title>
+<h3>Add Schedule</h3>
+<div class="container">
+  <form action="addschedule.php" method="post">
+
+    <label for="team1">Team1 Name</label>
+    <input type="text" name="team1" placeholder="e.g. SRH">
+
+    <label for="team2">Team2 Name</label>
+    <input type="text" name="team2" placeholder="e.g. CSK">
+
+     <label for="date">Date</label>
+    <input type="date" name="date" placeholder="Date">
+
+    <label for="match_no">Match No</label>
+    <input type="number" name="match_no" placeholder="Match number">
+    <input type="submit" style="float:left;" value="Submit">
+  </form>
+</div>
+</body>
+</html>

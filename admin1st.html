@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #33afd9;
+    padding: 20px;
+    text-align: center;
+}
+
+.header img {
+    width: 300px;
+    height: auto;
+}
+
+.navbar {
+    background-color: #33afd9;
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #000;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.container {
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+    background-color: #33afd9;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer a {
+    float: left;
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.footer a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.container p {
+    font-size: 24px;
+    text-align: center;
+}
+
+input[type="text"],
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 6px;
+}
+
+input[type="submit"] {
+    background-color: #33afd9;
+    color: #fff;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <img src="img/logoo.jpg" alt="Logo">
+</div>
+
+<div class="navbar">
+  <a href="admin1st.html">HOME</a>
+  <a href="schedule.php">SCHEDULES</a>
+  <a href="rank.php">RANKINGS</a>
+  <a href="stadium.php">STADIUMS</a>
+  <a href="cricket_boards.php">CRICKET BOARDS</a>
+  <a href="bowlerrankings.php">BOWLER RANKING</a>
+  <a href="batsmanrankings.php">BATSMAN RANKINGS</a>
+  <a href="about.html" style="float: right;">ABOUT</a>
+</div>
+
+<div class="container">
+  <form action="player_search.php" method="post">
+    <p>Player Name</p>
+    <input type="text" placeholder="Enter Player Name" name="playername">
+    <input type="submit" value="Search">
+  </form>
+</div>
+
+<div class="footer">
+  <a href="addplayer.html">ADD PLAYER</a>
+  <a href="addschedule.html">ADD SCHEDULE</a>
+  <a href="addstadium.html">ADD STADIUMS</a>
+  <a href="deleteplayer.html">DELETE PLAYER</a>
+  <a href="deleteschedule.html">DELETE SCHEDULE</a>
+  <a href="deletestadium.html">DELETE STADIUM</a>
+  <a href="admin.html" style="float: right;">LOGOUT</a>
+</div>
+
+</body>
+</html>
